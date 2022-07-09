@@ -55,27 +55,26 @@ nav {
 
 ul {
     display: flex;
-    align-items: center;
 }
 li {
     list-style-type: none;
     font-weight: 500;
 }
 
-button {
+.primary__button {
     background-color: var(--primary-color);
     color: #fff;
     border-radius: 32px;
     border: none;
 }
 
-button:hover {
+.primary__button:hover {
     background-color: var(--btn-hover-color);
     cursor: pointer;
 }
 
 .container {
-    padding: 56px 0;
+    padding: 80px 0;
 }
 
 .row {
@@ -114,6 +113,11 @@ button:hover {
 .nav__logo-name {
     font-size: 32px;
     font-weight: 900;
+    transition: all 300ms ease;
+}
+
+.nav__logo-name:hover {
+    color: var(--primary-color);
 }
 
 .nav__link {
@@ -123,6 +127,10 @@ button:hover {
     align-items: center;
     padding: 8px;
     transition: all 300ms ease;
+}
+
+.nav__links {
+    align-items: center;
 }
 
 .nav__link:hover {
@@ -223,17 +231,22 @@ header {
     transition: all 300ms ease;
 }
 
-.header__input-btn {
-    position: absolute;
-    margin-right: 8px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+.btn {
+    font-weight: 700;
+    font-size: 20px;
     width: 12rem;
+    padding: 16px 0;
+    transition: all 300ms ease;
+}
+
+.header__btn {
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    font-weight: 700;
-    font-size: 20px;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .header__input-input:focus {
@@ -242,9 +255,6 @@ header {
 }
 
 /* FEATURES */
-.container {
-    padding: 80px 0;
-}
 
 .features__row {
     width: 100%;
@@ -252,14 +262,15 @@ header {
     margin: 0 auto;
 }
 
-.features__heading {
+.center__heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.section__title {
+.section__title,
+.section__title--center {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -267,19 +278,24 @@ header {
     padding-bottom: 24px;
 }
 
-.section__subtitle {
+.section__subtitle,
+.section__subtitle--center {
     font-weight: 900;
     font-size: 64px;
     padding-bottom: 24px;
 }
 
+.section__para--center,
 .section__para{
     font-size: 22px;
-    text-align: center;
     font-weight: 500;
     line-height: 1.5;
     max-width: 700px;
     width: 100%;
+}
+
+.section__para--center {
+    text-align: center;
 }
 
 .services {
@@ -321,6 +337,119 @@ header {
 .service__para {
     line-height: 42px;
     font-size: 20px;
+    margin-right: 8px;
 }
 
+/* QUALITY WORK */
+.section__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 0;
+}
+
+.section__img {
+    max-width: 100%;
+    height: auto;
+}
+/* 
+.img__wrapper {
+    max-width: none;
+} */
+
+#quality .section__img {
+    border: 1px solid var(--secondary-color);
+}
+
+.section__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+/* STEPS */
+#steps .section__wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list__steps {
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+}
+
+.step__number {
+    color: #ccc;
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+
+.step__description--wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 32px;
+}
+
+.step__title {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 24px;
+}
+
+.step__para {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.step:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.img__wrapper {
+    width: 50%;
+}
+
+/* VALUES */
+.values__principles {
+    display: flex;
+}
+
+.values__header {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.values__svg svg {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
+
+.values__svg {
+    padding: 16px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.values__svg-green {
+    background-color: rgba(154,230,180, 1);
+    color: rgba(39,103,73, 1);
+}
+.values__svg-red {
+    background-color: rgba(254,178,178, 1);
+    color: rgba(155,44,44, 1);
+}
+
+#values .btn {
+    margin-top: 32px;
+}
 
