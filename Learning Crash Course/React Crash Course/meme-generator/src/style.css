@@ -14,6 +14,7 @@ main {
 header {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100px;
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
     color: white;
@@ -21,7 +22,7 @@ header {
 }
 
 header > img {
-    height: 80%;
+    height: 100%;
     margin-left: 10%;
 }
 
@@ -45,10 +46,12 @@ header > p {
     position: relative;
     width: 90%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .meme > img {
-    width: 100%;
+    width: 60%;
 }
 
 .meme > h2 {
